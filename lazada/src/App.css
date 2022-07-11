@@ -1,6 +1,7 @@
 .App {
   margin: 0;
   padding: 0;
+  background: #FFF;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -12,6 +13,15 @@
 .App-header {
   height: 15rem;
   width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background: #000;
 }
 /* 
 @keyframes App-logo-spin {

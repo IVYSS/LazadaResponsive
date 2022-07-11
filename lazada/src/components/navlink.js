@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./components.css";
 const Navlink = () => {
   const linkData = [
     {
@@ -33,9 +33,15 @@ const Navlink = () => {
   ];
 
   return (
-    <div style={{ width: "100%", display: "flex" }}>
-      {linkData.map((e, index) => {
-        <a>{e.name}</a>;
+    <div className="navlink-main">
+      {linkData.map((e) => {
+        return (
+          <div className="navlink-list">
+            <a className="navlink-item" href={e.path}>
+              <p className="navlink-text">{e.name}</p>
+            </a>
+          </div>
+        );
       })}
     </div>
   );
