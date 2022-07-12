@@ -106,21 +106,27 @@ const Productforu = () => {
         {productData.map((e, index) => {
           var shortName = e.name.slice(0, 50);
           return (
-            <div style={{ background: "#fff" }}>
-              <img src={e.imgSrc}></img>
+            <div
+              style={{ background: "#fff" }}
+              className="productforu_item"
+              key={index}
+            >
+              <div>
+                <img src={e.imgSrc}></img>
 
-              <p style={{ fontSize: "16px", marginRight: "3px" }}>
-                {shortName} ..
-              </p>
-              <p style={{ fontSize: "16px", color: "#f57224" }}>${e.price}</p>
-              <span style={{ display: "flex" }}>
-                <p style={{ fontSize: "13px", color: "#9e9e9e" }}>
-                  <strike>${e.realPrice}</strike>
+                <p style={{ fontSize: "16px", marginRight: "3px" }}>
+                  {shortName} ..
                 </p>
-                <p style={{ color: "#212121", fontSize: "13px" }}>
-                  -{e.percentDiscount}%
-                </p>
-              </span>
+                <p style={{ fontSize: "16px", color: "#f57224" }}>${e.price}</p>
+                <span style={{ display: "flex" }}>
+                  <p style={{ fontSize: "13px", color: "#9e9e9e" }}>
+                    <strike>${e.realPrice}</strike>
+                  </p>
+                  <p style={{ color: "#212121", fontSize: "13px" }}>
+                    -{e.percentDiscount}%
+                  </p>
+                </span>
+              </div>
             </div>
           );
         })}

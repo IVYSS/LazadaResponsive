@@ -114,7 +114,7 @@ hr {
   margin-right: 8px;
 }
 
-.menubutton-button :hover {
+.menubutton >div > a:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -375,6 +375,9 @@ p :hover {
   background: transparent;
   text-transform: uppercase;
   border: 1px solid #1a9cb8;
+}
+.productforu_item > div:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 img {

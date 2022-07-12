@@ -19,6 +19,17 @@ const Footer = () => {
     },
   ];
 
+  const brandData = [
+    { herder: "EL", brand: ["DoHome", " Canon", "Canon"] },
+    { herder: "MOTHER & BABY", brand: ["DoHome", " Canon", "Canon"] },
+    { herder: "HEALTH & BEAUTY", brand: ["DoHome", " Canon", "Canon"] },
+    { herder: "HEALTH & BEAUTY", brand: ["DoHome", " Canon", "Canon"] },
+    { herder: "HEALTH & BEAUTY", brand: ["DoHome", " Canon", "Canon"] },
+    { herder: "HEALTH & BEAUTY", brand: ["DoHome", " Canon", "Canon"] },
+    { herder: "HEALTH & BEAUTY", brand: ["DoHome", " Canon", "Canon"] },
+    { herder: "HEALTH & BEAUTY", brand: ["DoHome", " Canon", "Canon"] },
+    { herder: "HEALTH & BEAUTY", brand: ["DoHome", " Canon", "Canon"] },
+  ];
   const infoCare = [
     "ศูนย์ช่วยเหลือ",
     "การสั่งซื้อสินค้า",
@@ -179,11 +190,48 @@ const Footer = () => {
           <p style={{ fontSize: "13px", color: "#606060" }}>
             <b>TOP CATEGORIES & BRANDS</b>
           </p>
+          <br />
+          {brandData.map((e, index) => {
+            return (
+              <div>
+                <span>
+                  <p style={{ fontSize: "13px" }}>
+                    <b>{e.herder}</b>
+                  </p>
+                </span>
+                <span style={{ display: "flex" }}>
+                  {e.brand.map((b, index) => {
+                    return <a href="#">{b}, </a>;
+                  })}
+                </span>
+                <br></br>
+              </div>
+            );
+          })}
         </div>
         <div className="footer_infomation2_item">
+          <br></br>
+          <br></br>
+
+          {brandData.map((e, index) => {
+            return (
+              <div>
+                <span>
+                  <p style={{ fontSize: "13px" }}>
+                    <b>{e.herder}</b>
+                  </p>
+                </span>
+                <span style={{ display: "flex" }}>
+                  {e.brand.map((b, index) => {
+                    return <a href="#">{b}, </a>;
+                  })}
+                </span>
+                <br></br>
+              </div>
+            );
+          })}
         </div>
       </div>
-
     </div>
   );
 };
