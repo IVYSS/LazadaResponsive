@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   background: #FFF;
+  width: 100vw;
+  height: 100vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -11,7 +13,7 @@
 }
 
 .App-header {
-  height: 15rem;
+  height: 15vh;
   width: 100%;
 }
 * {
@@ -22,6 +24,21 @@
 
 .body {
   background: #000;
+}
+
+
+.about_us {
+  padding-left: 10vw;
+  background: #Fff;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  justify-content: center;
+  align-items: center;
+}
+.about_us_item {
+  padding: 2rem;
+  
 }
 /* 
 @keyframes App-logo-spin {

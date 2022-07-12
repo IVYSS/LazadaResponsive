@@ -34,9 +34,9 @@ const Navlink = () => {
 
   return (
     <div className="navlink-main">
-      {linkData.map((e) => {
+      {linkData.map((e, index) => {
         return (
-          <div className="navlink-list">
+          <div className="navlink-list" key={index}>
             <a className="navlink-item" href={e.path}>
               <p className="navlink-text">{e.name}</p>
             </a>

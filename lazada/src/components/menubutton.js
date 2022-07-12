@@ -33,7 +33,7 @@ const Menubutton = () => {
       {menuData.map((e, index) => {
         return (
             
-          <div className="menubutton-button">
+          <div className="menubutton-button" key={index}>
             <a className="menubutton-list" href={e.path}>
               <img src={e.src} className="menubutton-list-item-img"></img>
               <p style={{ fontSize: "1vw", whiteSpace: "nowrap" }}>
